@@ -1,5 +1,4 @@
-# dApp-backend
-DB, scraper, and admin panel for the Polygon dApp.
+# DB, scraper, and admin panel for the Polygon dApp.
 ![dapp](https://user-images.githubusercontent.com/88291140/170799959-95a7b04d-4416-4574-ac23-b432845bd6ff.png)
 
 At SW DAO, we're committed to being the industry-leading provider of automated investing solutions and crypto structured products.
