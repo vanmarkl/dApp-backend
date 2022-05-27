@@ -1,0 +1,10 @@
+table:
+  schema: prices
+  name: tokenset_allocations
+object_relationships:
+  - name: token
+    using:
+      foreign_key_constraint_on: setTokenId
+  - name: tokenByTokenid
+    using:
+      foreign_key_constraint_on: tokenId

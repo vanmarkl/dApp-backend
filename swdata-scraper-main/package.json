@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "workspaces": [
+    "app",
+    "server"
+  ],
+  "scripts": {
+    "server:build": "yarn workspace server build",
+    "server:start": "yarn workspace server start",
+    "clean": "rimraf build",
+    "build": "yarn clean && yarn workspace server build",
+    "dist": "yarn clean && cd server/ && yarn dist",
+    "start": "cd server && yarn start",
+    "start:ingester": "cd server && yarn start:ingester"
+  },
+  "devDependencies": {
+    "ncp": "^2.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "env-cmd": "^10.1.0",
+    "ts-node-dev": "^1.1.8"
+  }
+}

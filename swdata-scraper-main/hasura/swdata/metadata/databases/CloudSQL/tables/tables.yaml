@@ -1,0 +1,7 @@
+- "!include prices_daily.yaml"
+- "!include prices_hourly.yaml"
+- "!include prices_minutes.yaml"
+- "!include prices_networks.yaml"
+- "!include prices_token_infos.yaml"
+- "!include prices_tokens.yaml"
+- "!include prices_tokenset_allocations.yaml"

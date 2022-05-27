@@ -1,0 +1,57 @@
+table:
+  schema: prices
+  name: tokens
+object_relationships:
+  - name: network
+    using:
+      foreign_key_constraint_on: chainId
+  - name: token_info
+    using:
+      foreign_key_constraint_on:
+        column: tokenId
+        table:
+          schema: prices
+          name: token_infos
+array_relationships:
+  - name: dailies
+    using:
+      foreign_key_constraint_on:
+        column: tokenId
+        table:
+          schema: prices
+          name: daily
+  - name: hourlies
+    using:
+      foreign_key_constraint_on:
+        column: tokenId
+        table:
+          schema: prices
+          name: hourly
+  - name: minutes
+    using:
+      foreign_key_constraint_on:
+        column: tokenId
+        table:
+          schema: prices
+          name: minutes
+  - name: token_infos
+    using:
+      foreign_key_constraint_on:
+        column: tokenId
+        table:
+          schema: prices
+          name: token_infos
+  - name: tokensetAllocationsByTokenid
+    using:
+      foreign_key_constraint_on:
+        column: tokenId
+        table:
+          schema: prices
+          name: tokenset_allocations
+  - name: tokenset_allocations
+    using:
+      foreign_key_constraint_on:
+        column: setTokenId
+        table:
+          schema: prices
+          name: tokenset_allocations

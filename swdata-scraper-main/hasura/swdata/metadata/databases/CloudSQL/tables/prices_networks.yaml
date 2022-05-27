@@ -1,0 +1,11 @@
+table:
+  schema: prices
+  name: networks
+array_relationships:
+  - name: tokens
+    using:
+      foreign_key_constraint_on:
+        column: chainId
+        table:
+          schema: prices
+          name: tokens

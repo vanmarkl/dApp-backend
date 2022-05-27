@@ -1,0 +1,9 @@
+- name: CloudSQL
+  kind: postgres
+  configuration:
+    connection_info:
+      use_prepared_statements: false
+      database_url:
+        from_env: DB_URL_FROM_ENV
+      isolation_level: read-committed
+  tables: "!include CloudSQL/tables/tables.yaml"

@@ -1,0 +1,7 @@
+table:
+  schema: prices
+  name: minutes
+object_relationships:
+  - name: token
+    using:
+      foreign_key_constraint_on: tokenId
