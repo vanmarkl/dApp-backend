@@ -4456,6 +4456,11 @@ domhandler@^4.0.0, domhandler@^4.2.0, domhandler@^4.3.0:
   dependencies:
     domelementtype "^2.2.0"
 
+dompurify@^2.4.3:
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.4.4.tgz#c17803931dd524e1b68e0e940a84567f9498f4bd"
+  integrity sha512-1e2SpqHiRx4DPvmRuXU5J0di3iQACwJM+mFGE2HAkkK7Tbnfk9WcghcAmyWc9CRrjyRRUpmuhPUH6LphQQR3EQ==
+
 domutils@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
@@ -8259,15 +8264,16 @@ ra-language-english@^3.19.8:
   dependencies:
     ra-core "^3.19.8"
 
-ra-ui-materialui@^3.19.8:
-  version "3.19.8"
-  resolved "https://registry.yarnpkg.com/ra-ui-materialui/-/ra-ui-materialui-3.19.8.tgz#b68aa6df280b8cd7b86691840a3c65c50e496cbd"
-  integrity sha512-s8nmNH+zT9Aqunqm1zMZieBFF40Q69TyYAd54OZY5lDCgDvcgrcjKZDkg0vpOWOeo5Iu8ye+A17/C4VYhhTXew==
+ra-ui-materialui@^3.19.12, ra-ui-materialui@^3.19.8:
+  version "3.19.12"
+  resolved "https://registry.yarnpkg.com/ra-ui-materialui/-/ra-ui-materialui-3.19.12.tgz#4a6f54741aab52bca42d6cee6f9c8339c93126f3"
+  integrity sha512-8Zz88r5yprmUxOw9/F0A/kjjVmFMb2n+sjpel8fuOWtS6y++JWonDsvTwo4yIuSF9mC0fht3f/hd2KEHQdmj6Q==
   dependencies:
     autosuggest-highlight "^3.1.1"
     classnames "~2.2.5"
     connected-react-router "^6.5.2"
     css-mediaquery "^0.1.2"
+    dompurify "^2.4.3"
     downshift "3.2.7"
     inflection "~1.13.1"
     jsonexport "^2.4.1"
